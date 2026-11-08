@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- ICONO DE TIPO -->
+        <TextView
+            android:id="@+id/tvIconoInsumoDetalle"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="🍫"
+            android:textSize="18sp" />
+
+        <!-- NOMBRE E INFORMACIÓN DEL INSUMO -->
+        <TextView
+            android:id="@+id/tvNombreInsumoDetalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            tools:text="Cacao en Polvo" />
+
+        <!-- PORCIÓN / CANTIDAD REQUERIDA -->
+        <TextView
+            android:id="@+id/tvCantidadInsumoDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFF0F5"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="#8B263E"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="0.150 kg" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
